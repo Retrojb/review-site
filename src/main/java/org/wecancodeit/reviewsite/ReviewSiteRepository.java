@@ -17,9 +17,9 @@ public class ReviewSiteRepository {
 	}
 	
 	public ReviewSiteRepository() {
-		Review reviewOne = new Review(1111L, "Pitbulls", "much amazing", "null");
-		Review reviewTwo = new Review(2222L, "German Shepards", "beauty great", "null");
-		Review reviewThree = new Review(3333L, "Cats", "such majestic", "null");
+		Review reviewOne = new Review(1111L, "Pitbulls", "Much Amazing", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ");
+		Review reviewTwo = new Review(2222L, "German Shepards", "Beauty Great", "lorem bacon lorem bacon lorem bacon lorem bacon lorem bacon lorem bacon ");
+		Review reviewThree = new Review(3333L, "Cats", "Such Majestic", "Thought it was a cat, but you have been bamboloazed by another DOGGO");
 	
 		this.addReview(reviewOne);
 		this.addReview(reviewTwo);
