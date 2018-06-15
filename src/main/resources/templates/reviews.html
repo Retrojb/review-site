@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Courses Home Page</title>
+
+
+</head>
+<body>
+<nav>
+	<li th:each="review : ${reviews}"><a th:href="|@{/reviews/}${review.id}|"> 
+	<span th:text="@{review.name}"></span>other reviews</a></li>
+
+</nav>
+<hr/>
+	<h1><span th:text="${reviews.name}"></span></h1>
+<hr/>
+	<span th:text="#{reviews.name}"></span>
+	<ul>
+
+	</ul>
+
+</body>
+</html>

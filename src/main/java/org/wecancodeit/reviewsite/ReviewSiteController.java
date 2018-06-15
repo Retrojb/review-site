@@ -18,7 +18,7 @@ public class ReviewSiteController {
 		return "ReviewHome";
 	}
 	
-	@RequestMapping("/review/{id}")
+	@RequestMapping("/reviews/{id}")
 	public String getReview(@PathVariable(name="id") Long id, Model model) {
 		model.addAttribute("reviews", reviewSiteRepo.findById(id));
 		return "reviews";
