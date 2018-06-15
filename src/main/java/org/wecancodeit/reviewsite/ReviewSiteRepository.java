@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
+import org.thymeleaf.TemplateEngine;
 
 @Service
 public class ReviewSiteRepository {
@@ -16,7 +17,7 @@ public class ReviewSiteRepository {
 	}
 	
 	public ReviewSiteRepository() {
-		Review reviewOne = new Review(1111L, "pitbulls", "much amazing", "null");
+		Review reviewOne = new Review(1111L, "Pitbulls", "much amazing", "null");
 		Review reviewTwo = new Review(2222L, "German Shepards", "beauty great", "null");
 		Review reviewThree = new Review(3333L, "Cats", "such majestic", "null");
 	
@@ -38,5 +39,8 @@ public class ReviewSiteRepository {
 		return reviews.get(id);
 	}
 	
+
+
+	}
 	
-}
+
