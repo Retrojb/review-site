@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>John's Review's Home Page</title>
+</head>
+
+<body>
+<hr />
+		<h1>Animal Reviews</h1>
+<hr />
+	<h3>What are the best pups and kittens?</h3>
+	
+		<ul>
+			<li th:each="review : ${reviews}">
+				<a th:href="|@{/reviews/}${review.id}|">
+					<span th:text="${review.name} + ': '">Name</span>
+					<span th:text= "${review.content}">content</span>
+				</a>
+			</li>
+		</ul>
+</body>
+</html>

@@ -20,7 +20,7 @@ public class ReviewSiteController {
 	
 	@RequestMapping("/review/{id}")
 	public String getReview(@PathVariable(name="id") Long id, Model model) {
-		model.addAttribute("review", reviewSiteRepo.findById(id));
-		return "review";
+		model.addAttribute("reviews", reviewSiteRepo.findById(id));
+		return "reviews";
 	}
 }
