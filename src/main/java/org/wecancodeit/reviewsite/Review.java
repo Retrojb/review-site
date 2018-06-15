@@ -36,6 +36,10 @@ public class Review {
 		this.review = review;
 		this.content = content;
 	}
+	public void put(Long id, Review review2) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	
