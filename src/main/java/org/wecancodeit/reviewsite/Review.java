@@ -10,6 +10,8 @@ public class Review {
 	private String content;
 	private Date reviewDate;
 	private String description;
+	private String imgUrl;
+	
 	public Long getId() {
 		return id;
 	}
@@ -28,12 +30,16 @@ public class Review {
 	public String getDescription() {
 		return description;
 	}
-	public Review(Long id, String name, String review, String content) {
-		super();
+	
+	public String getImgUrl() {
+		return imgUrl;
+	}
+	public Review(Long id, String name, String review, String content, String imgUrl) {
 		this.id = id;
 		this.name = name;
 		this.review = review;
 		this.content = content;
+		this.imgUrl = imgUrl;
 	}
 	
 	

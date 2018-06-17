@@ -22,7 +22,9 @@
 		<span th:text="${reviews.name}"></span>
 	</h1>
 	<hr />
-	
+	<section>
+	 <img th:src="@{reviews.imgUrl}" />
+	</section>
 	<p>
 		<span th:text="${reviews.review}">pup</span>
 	</p>
@@ -48,12 +50,12 @@
 	turpis eu felis tristique facilisis. Donec ut felis sed mauris gravida
 	tincidunt.
 
-	<p></p>
+	
 
 
 	<footer>
 		<hr />
-		Web site by: Retrojb 2018
+		Web site by: <a href="https://github.com/Retrojb">Retrojb</a> 2018
 
 		<li th:each="review : ${reviews}"><a th:href="@{/ReviewHome/}">
 				<span th:text="@{ReviewHome}"></span>
