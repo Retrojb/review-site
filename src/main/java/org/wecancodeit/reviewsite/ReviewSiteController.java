@@ -39,16 +39,4 @@ public class ReviewSiteController {
 		return "reviews";
 	}
 	
-	@RequestMapping(value ="/", method = RequestMethod.GET)
-	public String reviews(Model model) {
-		model.addAttribute("Name", "");
-		Iterable<Review> reviewsIterable = reviewSiteRepo.findAll();
-		
-		for(Review review : reviewsIterable) {
-			System.out.println(reviews(model));
-		}
-		model.addAttribute("reviews", reviewsIterable);
-		return "reviews";
-	}
-	
 }

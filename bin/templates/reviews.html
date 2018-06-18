@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
 <title th:text="${reviews.name}"></title>
-
+<link rel="stylesheet" href="/review-site/src/main/resources/static/CSS/stlyesheet.css"  type="css"  />
 
 </head>
+
 <body>
 
-<header><h1>John's Review's</h1></header>
-<hr/>
+	<h1>John's Review's</h1>
+	<hr />
 	<nav>
 		<li th:each="review : ${reviews}"><a th:href="@{/ReviewHome/}">
 				<span th:text="@{ReviewHome}"></span>
 		</a></li>
-
-	</nav>
+		</nav>
+		
 	<hr />
 	<h1>
 		<span th:text="${reviews.name}"></span>
 	</h1>
 	<hr />
-	<section>
-	 <img th:src="@{reviews.imgUrl}" />
-	</section>
+	<div>
+		<img th:src="@{/src/main/resources/static/img/germanshepard.jpg}"  />
+	</div>
+
 	<p>
 		<span th:text="${reviews.review}">pup</span>
 	</p>
@@ -50,7 +50,7 @@
 	turpis eu felis tristique facilisis. Donec ut felis sed mauris gravida
 	tincidunt.
 
-	
+
 
 
 	<footer>

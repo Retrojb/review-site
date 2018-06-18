@@ -4,10 +4,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
-import org.thymeleaf.TemplateEngine;
+import org.springframework.stereotype.Repository;
 
-@Service
+@Repository
 public class ReviewSiteRepository {
 	
 	private Map<Long, Review> reviews = new HashMap<>();
@@ -17,7 +16,7 @@ public class ReviewSiteRepository {
 	}
 	
 	public ReviewSiteRepository() {
-		Review reviewOne = new Review(1111L, "Pitbulls", "Much Amazing", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ", "/img/germanshepard.jpg");
+		Review reviewOne = new Review(1111L, "Pitbulls", "Much Amazing", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ", "/img/nya.jpg");
 		Review reviewTwo = new Review(2222L, "German Shepards", "Beauty Great", "lorem bacon lorem bacon lorem bacon lorem bacon lorem bacon lorem bacon ", "/img/germanshepard.jpg");
 		Review reviewThree = new Review(3333L, "Cats", "Such Majestic", "Thought it was a cat, but you have been bamboloazed by another DOGGO", "/img/thundercat.jpg");
 	
@@ -38,8 +37,10 @@ public class ReviewSiteRepository {
 	public Object findById(Long id) {
 		return reviews.get(id);
 	}
+
+}
+	
 	
 
-	}
 	
 

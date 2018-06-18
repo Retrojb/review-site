@@ -1,0 +1,25 @@
+header {
+	text-align: center;
+	align-content: center;
+	font-family: san-serif;
+	background-color: #596a87;
+	border-style: solid;
+	border-color: #bababa;
+	border-width: small;
+}
+h1 {
+	text-align: center;
+	align-content: center;
+	font-family: san-serif;
+	background-color: #596a87;
+	border-style: solid;
+	border-color: #bababa;
+	border-width: small;
+}
+body, nav, span {
+	background-color: #596a87;
+	text-align: center;
+	align-content: center;
+	font-family: san-serif;
+		
+}
