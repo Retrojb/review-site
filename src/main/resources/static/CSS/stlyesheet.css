@@ -6,6 +6,7 @@ header {
 	border-style: solid;
 	border-color: #bababa;
 	border-width: small;
+	color: #bababa;
 }
 h1 {
 	text-align: center;
@@ -15,13 +16,18 @@ h1 {
 	border-style: solid;
 	border-color: #bababa;
 	border-width: small;
+	color: #bababa;
 }
 body, nav, span {
 	background-color: #596a87;
 	text-align: center;
 	align-content: center;
 	font-family: san-serif;	
+	color: #bababa;
 }
 img{
 	resize: 600px;
+}
+a{
+	color: #bababa;
 }
