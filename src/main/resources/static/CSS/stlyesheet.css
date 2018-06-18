@@ -20,6 +20,8 @@ body, nav, span {
 	background-color: #596a87;
 	text-align: center;
 	align-content: center;
-	font-family: san-serif;
-		
+	font-family: san-serif;	
+}
+img{
+	resize: 600px;
 }

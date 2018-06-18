@@ -1,7 +1,5 @@
 package org.wecancodeit.reviewsite;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,29 +12,23 @@ public class ReviewSiteController {
 
 	@Autowired
 	ReviewSiteRepository reviewSiteRepo;
-	
+
 	@RequestMapping("/ReviewHome")
 	public String reviewHome(Model model) {
 		model.addAttribute("reviews", reviewSiteRepo.findAll());
 		return "ReviewHome";
 	}
-	
+
 	@RequestMapping("/reviews/{id}")
-	public String getReview(@PathVariable(name="id") Long id, Model model) {
+	public String getReview(@PathVariable(name = "id") Long id, Model model) {
 		model.addAttribute("reviews", reviewSiteRepo.findById(id));
 		return "reviews";
 	}
-	
-	@RequestMapping(method = RequestMethod.POST)
-	public String post() {
-		return "ReviewHome";
-		
-	}
-	
+
 	@RequestMapping("/reviews")
 	public String getReviews(Model model) {
 		model.addAttribute("reviews", reviewSiteRepo.getReviews());
 		return "reviews";
 	}
-	
+
 }

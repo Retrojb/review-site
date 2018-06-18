@@ -2,7 +2,6 @@
 <html>
 <head>
 <title th:text="${reviews.name}"></title>
-<link rel="stylesheet" href="/review-site/src/main/resources/static/CSS/stlyesheet.css"  type="css"  />
 
 </head>
 
@@ -14,15 +13,15 @@
 		<li th:each="review : ${reviews}"><a th:href="@{/ReviewHome/}">
 				<span th:text="@{ReviewHome}"></span>
 		</a></li>
-		</nav>
-		
+	</nav>
+
 	<hr />
 	<h1>
 		<span th:text="${reviews.name}"></span>
 	</h1>
 	<hr />
 	<div>
-		<img th:src="@{/src/main/resources/static/img/germanshepard.jpg}"  />
+		<img th:src="|/images/${reviews.imgUrl}.jpg|" height="400" width="600" />
 	</div>
 
 	<p>
@@ -32,26 +31,24 @@
 		<span th:text="${reviews.content}">pup</span>
 	</p>
 
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-	finibus mollis scelerisque. Fusce sit amet pharetra sem. Praesent eget
-	elit non nibh feugiat pellentesque ut vel ipsum. Etiam sed elementum
-	enim, sed tincidunt elit. Nam tempor, dolor ac efficitur scelerisque,
-	odio nunc ultrices leo, vel facilisis magna enim placerat dolor.
-	Vivamus vehicula, mi sit amet feugiat dapibus, metus magna viverra dui,
-	vitae lobortis sapien purus sed metus. Donec interdum, metus id
-	fringilla blandit, odio nisi malesuada enim, cursus vulputate ligula
-	dui ut quam. Aliquam rhoncus id massa quis venenatis. Aenean et ante
-	erat. Vivamus consequat rhoncus turpis, nec accumsan turpis egestas eu.
-	Sed at mattis lectus, ac sodales mi. Suspendisse massa eros, viverra eu
-	enim sit amet, vulputate scelerisque justo. Proin sed augue commodo
-	tellus volutpat lobortis et nec lorem. Vestibulum ante ipsum primis in
-	faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vel
-	turpis eu felis tristique facilisis. Donec ut felis sed mauris gravida
-	tincidunt.
-
-
-
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Phasellus finibus mollis scelerisque. Fusce sit amet pharetra sem.
+			Praesent eget elit non nibh feugiat pellentesque ut vel ipsum. Etiam
+			sed elementum enim, sed tincidunt elit. Nam tempor, dolor ac
+			efficitur scelerisque, odio nunc ultrices leo, vel facilisis magna
+			enim placerat dolor. Vivamus vehicula, mi sit amet feugiat dapibus,
+			metus magna viverra dui, vitae lobortis sapien purus sed metus. Donec
+			interdum, metus id fringilla blandit, odio nisi malesuada enim,
+			cursus vulputate ligula dui ut quam. Aliquam rhoncus id massa quis
+			venenatis. Aenean et ante erat. Vivamus consequat rhoncus turpis, nec
+			accumsan turpis egestas eu. Sed at mattis lectus, ac sodales mi.
+			Suspendisse massa eros, viverra eu enim sit amet, vulputate
+			scelerisque justo. Proin sed augue commodo tellus volutpat lobortis
+			et nec lorem. Vestibulum ante ipsum primis in faucibus orci luctus et
+			ultrices posuere cubilia Curae; Nulla vel turpis eu felis tristique
+			facilisis. Donec ut felis sed mauris gravida tincidunt.</p>
+	</section>
 
 	<footer>
 		<hr />
